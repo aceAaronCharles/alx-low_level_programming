@@ -2,7 +2,7 @@
 
 /**
 	* main - default description
-	* Description: default description
+	* Description: write a programme to print _putchar, followed by new line
 	* Return: 0
 */
 
@@ -18,3 +18,4 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
+
