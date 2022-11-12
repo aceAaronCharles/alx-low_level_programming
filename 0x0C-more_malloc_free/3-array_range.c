@@ -6,7 +6,7 @@
  * @max: max number of elements
  *
  * return: array pointer address
- * 	NULL if it fails
+ * NULL if it fails
  */
 int *array_range(int min, int max)
 {
@@ -19,7 +19,7 @@ int *array_range(int min, int max)
 	if (array == NULL)
 		return (NULL);
 
-	for (i=0; min<=max; i++)
+	for (i = 0; min <= max; i++)
 	{
 		array[i] = min;
 		min++;
