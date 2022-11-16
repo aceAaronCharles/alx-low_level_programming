@@ -1,23 +1,27 @@
-#include "dog.h"
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * init_dog - initialize dog struct
- *
- * @d: input pointer to struct dog
- * @name: input for dog name
- * @age: input for dog age
- * @owner: input for dog owner
- *
- * Return: nothing
-*/
+ * dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
 
-void init_dog(struct dog *d, char *name, float age, char *owner)
+/**
+ * struct dog - structure for dogs
+ * @name: first member
+ * @age: second member
+ * @owner: third member
+ */
+struct dog
 {
-	if (d)
-	{
-		/*d->name = name;*/
-		(*d).name = name;
-		(*d).age = age;
-		(*d).owner = owner;
-	}
-}
+	char *name;
+	float age;
+	char *owner;
+};
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+
+#endif
