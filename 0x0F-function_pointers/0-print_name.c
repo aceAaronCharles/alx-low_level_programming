@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include "main.h"
-
 /**
  * print name - function to print name
  *
