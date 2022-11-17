@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * print name - function to print name
  *
