@@ -16,4 +16,17 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 
+
+
+/**
+ * enum bool - typedef function for bool
+ * @TRUE: 1
+ * @FALSE: 0
+*/
+typedef enum bool
+{
+	TRUE = 1,
+	FALSE = 0
+} bool;
+
 #endif /** FUNCTION POINTERS.H */
